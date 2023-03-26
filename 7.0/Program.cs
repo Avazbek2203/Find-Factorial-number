@@ -4,7 +4,7 @@ class Program
 {
     static void Main()
     {
-        int num = 0;
+        int number = 0;
         bool validInput = false;
 
         while (!validInput)
@@ -12,7 +12,7 @@ class Program
             Console.Write("Enter a number: ");
             string input = Console.ReadLine();
 
-            if (int.TryParse(input, out num))
+            if (int.TryParse(input, out number))
             {
                 validInput = true;
             }
@@ -24,11 +24,11 @@ class Program
 
         int factorial = 1;
 
-        for (int i = 2; i <= num; i++)
+        for (int i = 2; i <= number; i++)
         {
             factorial *= i;
         }
 
-        Console.WriteLine("Factorial of {0} is: {1}.", num, factorial);
+        Console.WriteLine("Factorial of {0} is: {1}.", number, factorial);
     }
 }
